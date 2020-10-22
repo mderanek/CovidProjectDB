@@ -68,7 +68,20 @@
 	  // Initialize Firebase
 	  firebase.initializeApp(firebaseConfig);
 	  firebase.analytics();
+
+	  var database = firebase.database();
+
+	  var caseCountRef = database.ref('posts/' + postId +'/caseCount');
+	  caseCountRef.on('value', function(snapshot)) {
+		  updateCaseCount(postElement, snapshot.val());
+	  });
+
+	
+	  function updateCaseCount(el, val){
+		  el.innerHtml('${val} Cases!');
+	  }
+	
 	</script>
 
-	</body>
+    </body>
 </html>
