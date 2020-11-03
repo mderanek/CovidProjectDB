@@ -49,9 +49,15 @@
                 zoomOffset: -1,
                 accessToken: 'pk.eyJ1IjoiYmx1bWIiLCJhIjoiY2tnczh0amQ1MDl2OTJ3cnp4aXlmaXJyaCJ9.h0VpWIVFok5wX9b3PLVJVA'
                 }).addTo(mymap);
+
                 var Dunne = L.circle([41.70444, -86.23297], {
                     radius: 20
                 }).addTo(mymap);
+                var dunnePop = L.popup().setContent(
+                    '<b>Dunne Hall</b>'
+                )
+                Dunne.bindPopup(dunnePop)
+
                 var Flaherty = L.circle([41.70338, -86.23296], {
                     radius: 20
                 }).addTo(mymap);
