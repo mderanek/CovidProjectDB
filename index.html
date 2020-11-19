@@ -299,7 +299,7 @@
                 );
                 Carroll.bindPopup(CarrollPop);
 
-                var SDH = L.circle([41.69898, -86.24109], {
+                var SDH = L.circle([41.69945, -86.24143], {
                     radius: 20,
                     color: "#00FF00"
                 }).addTo(mymap);
@@ -307,6 +307,25 @@
                     '<center><b>South Dining Hall</b> <p>Hours: 7:00AM - 7:30PM</p></center>'
                 );
                 SDH.bindPopup(SDHPop);
+
+                var NDH = L.circle([41.70434, -86.23608], {
+                    radius: 20,
+                    color: "#00FF00"
+                }).addTo(mymap);
+                var NDHPop = L.popup().setContent(
+                    '<center><b>North Dining Hall</b> <p>Hours: 7:00AM - 7:30PM</p></center>'
+                );
+                NDH.bindPopup(NDHPop);
+
+                var Lafun = L.circle([41.70187, -86.23772], {
+                    radius: 20,
+                    color: "#00FF00"
+                }).addTo(mymap);
+                var LafunPop = L.popup().setContent(
+                    '<center><b>LaFortune</b> <p>Hours: 7:00AM - 12:00AM</p></center>'
+                );
+                LafunPop.bindPopup(LafunPop);
+
             </script> 
 
 
