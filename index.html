@@ -298,6 +298,14 @@
                     '<center><b>Carroll Hall</b> <p>Cases: 0 Positives</p></center>'
                 );
                 Carroll.bindPopup(CarrollPop);
+
+                var SDH = L.circle([41.69898, -86.24109], {
+                    radius: 20
+                }).addTo(mymap);
+                var SDHPop = L.popup().setContent(
+                    '<center><b>South Dining Hall</b> <p>Hours: 7:00AM - 7:30PM</p></center>'
+                );
+                SDH.bindPopup(SDHPop);
             </script> 
 
 
