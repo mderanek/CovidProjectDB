@@ -333,7 +333,6 @@
 
                 var SDH = L.circle([41.69945, -86.24143], {
                     radius: 20,
-                    color: "#00FF00"
                 }).addTo(mymap);
                 var SDHPop = L.popup().setContent(
                     '<center><b>South Dining Hall</b> <p>Hours: 7:00AM - 7:30PM</p></center>'
@@ -342,7 +341,6 @@
 
                 var NDH = L.circle([41.70434, -86.23608], {
                     radius: 20,
-                    color: "#00FF00"
                 }).addTo(mymap);
                 var NDHPop = L.popup().setContent(
                     '<center><b>North Dining Hall</b> <p>Hours: 7:00AM - 7:30PM</p></center>'
@@ -351,12 +349,19 @@
 
                 var Lafun = L.circle([41.70193, -86.23767], {
                     radius: 20,
-                    color: "#00FF00"
                 }).addTo(mymap);
                 var LafunPop = L.popup().setContent(
                     '<center><b>LaFortune</b> <p>Hours: 7:00AM - 12:00AM</p></center>'
                 );
                 LafunPop.bindPopup(LafunPop);
+
+                var Dustu = L.circle([41.69839, -86.23531], {
+                    radius: 20,
+                }).addTo(mymap);
+                var DustuPop = L.popup().setContent(
+                    '<center><b>Duncan Student Center</b> <p>Hours: 7:00AM - 7:00PM</p></center>'
+                );
+                DustuPop.bindPopup(DustuPop);
 
             </script> 
 
